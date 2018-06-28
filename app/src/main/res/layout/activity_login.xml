@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="243.6dp"
+        android:layout_height="35.69dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/health_care_logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_blue_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20.17dp"
+                android:layout_height="22.92dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/login_field_img" />
+
+            <com.midnight.healthcare.editText
+                android:id="@+id/login_login_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="7.5dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/appBlue"
+                android:textColorHint="@color/agreementNotHighlighted"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_blue_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24.41dp"
+                android:layout_height="24.42dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/pass_field_img" />
+
+            <com.midnight.healthcare.editText
+                android:id="@+id/login_pass_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@android:color/transparent"
+                android:hint="Password"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/appBlue"
+                android:textColorHint="@color/agreementNotHighlighted"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.midnight.healthcare.Btn
+                android:id="@+id/login_register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_blue"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <com.midnight.healthcare.Btn
+                android:id="@+id/login_login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_blue"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.midnight.healthcare.BtnBold
+        android:id="@+id/lost_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+        android:text="Lost password?"
+        android:textAllCaps="false"
+        android:textColor="@color/appBlue" />
+</RelativeLayout>

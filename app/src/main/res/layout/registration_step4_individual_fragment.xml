@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/exit"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="21.5dp">
+
+            <Button
+                android:layout_width="33.56dp"
+                android:layout_height="21.53dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_arrow"
+                android:clickable="false" />
+        </RelativeLayout>
+
+
+        <com.midnight.healthcare.TextBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="Registration: Step 4"
+            android:textColor="@color/appBlue"
+            android:textSize="28dp" />
+
+        <com.midnight.healthcare.Text
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="107dp"
+            android:text="Subscription"
+            android:textColor="@color/appBlue"
+            android:textSize="18dp" />
+
+        <com.midnight.healthcare.TextHelvetica
+            android:id="@+id/textHelvetica"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_blue_light2"
+            android:gravity="center"
+            android:text="$9.99/month"
+            android:textColor="@color/appBlue"
+            android:textSize="20dp" />
+
+
+        <com.midnight.healthcare.TextBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Month Free!!!"
+            android:textColor="@color/appBlue"
+            android:textSize="28dp"
+            android:layout_marginBottom="23dp"
+            android:layout_above="@+id/subscribe"
+            android:layout_centerHorizontal="true" />
+
+        <com.midnight.healthcare.Btn
+            android:id="@+id/subscribe"
+            android:layout_width="167dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_blue"
+            android:padding="10dp"
+            android:text="Subscribe now"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginBottom="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Health Care</string>
+    <string name="terms_and_conditions"><u>Terms and Conditions</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sunday">1</string>
+    <string name="saturday">7</string>
+    <string name="monday">2</string>
+    <string name="tuesday">3</string>
+    <string name="wednesday">4</string>
+    <string name="thursday">5</string>
+    <string name="friday">6</string>
+    <string name="rating">Rating</string>
+</resources>

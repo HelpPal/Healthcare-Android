@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1097694396988",
+    "firebase_url": "https://healthcare-c4574.firebaseio.com",
+    "project_id": "healthcare-c4574",
+    "storage_bucket": "healthcare-c4574.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097694396988:android:69351cdcffd65a02",
+        "android_client_info": {
+          "package_name": "com.midnight.healthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097694396988-tslbfsfdlunrmhjhfnc3t799l0mcqhj1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.midnight.healthcare",
+            "certificate_hash": "3CFE79B63BBC510C94D65D66E3F16BA491454DB0"
+          }
+        },
+        {
+          "client_id": "1097694396988-4qcclamnv7n0bvrgqak6j1n05i2rh0a3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr6vE_ZPnuULZsZlwSFa3BbWzoFxcRevk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097694396988-4qcclamnv7n0bvrgqak6j1n05i2rh0a3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context="com.midnight.healthcare.Activity.MessagesActivity">
+
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:id="@+id/exit"
+        android:layout_marginTop="21.5dp">
+        <Button
+            android:layout_width="33.56dp"
+            android:layout_height="21.53dp"
+            android:clickable="false"
+            android:layout_centerInParent="true"
+            android:background="@drawable/back_arrow"
+            />
+    </RelativeLayout>
+
+        <com.midnight.healthcare.Text
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Messages"
+            android:textSize="18dp"
+            android:textColor="@color/appBlue"
+            android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/deleteSign"
+        android:layout_marginTop="20dp"
+        >
+
+    <Button
+        android:layout_width="34.43dp"
+        android:layout_centerInParent="true"
+        android:layout_height="29.54dp"
+        android:background="@drawable/delete_sign"
+        />
+    </RelativeLayout>
+
+    <com.midnight.healthcare.Text
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blueHighlighted"
+        android:text="You don't have any conversations"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:id="@+id/noMessages"
+        android:visibility="gone"
+        />
+
+        <ListView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/messages_list"
+            android:layout_marginTop="75dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="#F8FBFE"
+            android:id="@+id/deleteLayout"
+            >
+            <ImageView
+                android:layout_width="22.61dp"
+                android:layout_height="19.4dp"
+                android:src="@drawable/delete_sign_blue"
+                />
+            <com.midnight.healthcare.Text
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteText"
+                android:textColor="@color/blueHighlighted"
+                android:layout_marginStart="10dp"
+                android:text="Delete 2 conversations"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+
+
+</RelativeLayout>

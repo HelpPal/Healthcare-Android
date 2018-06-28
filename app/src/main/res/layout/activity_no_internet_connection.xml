@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_no_internet_connection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.midnight.healthcare.Activity.NoInternetConnectionActivity">
+
+    <ImageView
+        android:layout_width="53.59dp"
+        android:layout_height="91.85dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/phoneImage"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/no_internet"
+        />
+    <com.midnight.healthcare.TextBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No internet connection..."
+        android:textSize="20dp"
+        android:textColor="@color/blueHighlighted"
+        android:layout_marginTop="255dp"
+        android:layout_centerHorizontal="true"
+        />
+    <com.midnight.healthcare.TextHelvetica
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:text="Please make sure your phone has internet access in order to use the app."
+        android:textColor="#95C3FD"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="285dp"
+        />
+
+    <com.midnight.healthcare.Btn
+        android:layout_width="152.52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/round_blue"
+        android:text="Try again"
+        android:id="@+id/tryAgain"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        />
+
+</RelativeLayout>

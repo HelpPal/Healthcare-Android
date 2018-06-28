@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.midnight.healthcare.Activity.JobForCNA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:id="@+id/exit"
+                android:layout_marginTop="21.5dp">
+                <Button
+                    android:layout_width="33.56dp"
+                    android:layout_height="21.53dp"
+                    android:clickable="false"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/back_arrow"
+                    />
+            </RelativeLayout>
+            <Button
+                android:layout_width="26.67dp"
+                android:layout_height="25.76dp"
+                android:background="@drawable/edit_img"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/job_edt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.midnight.healthcare.Text
+                android:id="@+id/title_job"
+                android:layout_width="251dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Certified Nursing Assistant - Full Time Days - Kindred Hospital Palm Beaches, FL"
+                android:textSize="20dp"
+                android:textColor="@color/blueHighlighted"
+                android:layout_marginTop="30dp"/>
+
+            <com.midnight.healthcare.Text
+                android:id="@+id/location_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Palm Beaches, FL"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"/>
+            <com.midnight.healthcare.Text
+                android:id="@+id/distance_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="0.6 mi"
+                android:singleLine="true"
+                android:layout_marginTop="7dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/round_blue_text"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1EFFA">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F8FBFE"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.midnight.healthcare.Text
+                        android:id="@+id/cell_job_info"
+                        android:layout_width="212dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Hourly - Entry Level ($) - Est. Time: Less than 1 month, Less than 10 hrs/week"/>
+
+
+                    <com.midnight.healthcare.Text
+                        android:id="@+id/cell_job_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#25B176"
+                        android:textSize="20dp"
+                        android:text="$15/h"/>
+                </RelativeLayout>
+                   <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="327dp"
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
+                    <com.midnight.healthcare.BtnHelvetica
+                        android:enabled="false"
+                        android:id="@+id/job_cell_s"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:background="@drawable/s"
+                        android:layout_weight="1"
+                        android:text="S"
+                        android:textColor="@color/textColor"
+                        />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#E1EFFA"/>
+                    <com.midnight.healthcare.BtnHelvetica
+                        android:enabled="false"
+                        android:id="@+id/job_cell_m"
+                        android:layout_width="match_parent"
+                        android:textSize="16dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:layout_weight="1"
+                        android:text="M"
+                        android:textColor="@color/textColor"
+                        />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#E1EFFA"/>
+                    <com.midnight.healthcare.BtnHelvetica
+                        android:enabled="false"
+                        android:id="@+id/job_cell_t"
+                        android:layout_width="match_parent"
+                        android:textSize="16dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:layout_weight="1"
+                        android:text="T"
+                        android:textColor="@color/textColor"
+                        />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#E1EFFA"/>
+                    <com.midnight.healthcare.BtnHelvetica
+                        android:enabled="false"
+                        android:id="@+id/job_cell_w"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:background="@android:color/white"
+                        android:layout_weight="1"
+                        android:text="W"
+                        android:textColor="@color/textColor"
+                        />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#E1EFFA"/>
+                    <com.midnight.healthcare.BtnHelvetica
+                        android:enabled="false"
+                        android:id="@+id/job_cell_th"
+                        android:layout_width="match_parent"
+                        android:textSize="16dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:layout_weight="1"
+                        android:text="TH"
+                        android:textColor="@color/textColor"
+                        />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#E1EFFA"/>
+                    <com.midnight.healthcare.BtnHelvetica
+                        android:enabled="false"
+                        android:id="@+id/job_cell_f"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:background="@android:color/white"
+                        android:layout_weight="1"
+                        android:text="F"
+                        android:textColor="@color/textColor"
+                        />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#E1EFFA"/>
+                    <com.midnight.healthcare.BtnHelvetica
+                        android:enabled="false"
+                        android:id="@+id/job_cell_sa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sa"
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:text="Sa"
+                        android:textColor="@color/textColor"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1EFFA"
+               >
+            </LinearLayout>
+
+            <com.midnight.healthcare.Text
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:id="@+id/cell_job_desc"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Certified Nursing Assistant - Full Time Days - Kindred Hospital Palm Beaches, FL ( Job Number: 272175 ) Description Interested in a career with Kindred Hospitals – a place where you can put your heart into and…"/>
+
+
+
+
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

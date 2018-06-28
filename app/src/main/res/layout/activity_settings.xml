@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context="com.midnight.healthcare.Activity.SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:id="@+id/exit"
+            android:layout_marginTop="21.5dp">
+            <Button
+                android:layout_width="33.56dp"
+                android:layout_height="21.53dp"
+                android:clickable="false"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_arrow"
+                />
+        </RelativeLayout>
+
+    <com.midnight.healthcare.Text
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Settings"
+        android:textSize="18dp"
+        android:textColor="@color/appBlue"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        >
+
+        <com.midnight.healthcare.Text
+            android:layout_marginStart="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="New password"
+            android:textColor="#93c2fb"/>
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="@drawable/round_blue_light">
+        <ImageView
+            android:layout_width="24.41dp"
+            android:layout_height="24.42dp"
+            android:src="@drawable/pass_field_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"/>
+        <com.midnight.healthcare.editText
+            android:singleLine="true"
+            android:hint=""
+            android:inputType="textPassword"
+            android:textColorHint="@color/agreementNotHighlighted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/appBlue"
+            android:gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/newPass"/>
+    </LinearLayout>
+
+        <com.midnight.healthcare.Text
+            android:layout_marginStart="18dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Repeat new password"
+            android:textColor="#93c2fb"/>
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_blue_light">
+        <ImageView
+            android:layout_width="24.41dp"
+            android:layout_height="24.42dp"
+            android:src="@drawable/pass_field_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"/>
+        <com.midnight.healthcare.editText
+            android:singleLine="true"
+            android:hint=""
+            android:inputType="textPassword"
+            android:textColorHint="@color/agreementNotHighlighted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/appBlue"
+            android:gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/newPassRepeat"/>
+    </LinearLayout>
+
+        <com.midnight.healthcare.Text
+            android:layout_marginStart="18dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Old password"
+            android:textColor="#93c2fb"/>
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_blue_light">
+            <ImageView
+                android:layout_width="24.41dp"
+                android:layout_height="24.42dp"
+                android:src="@drawable/pass_field_img"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"/>
+            <com.midnight.healthcare.editText
+                android:singleLine="true"
+                android:hint=""
+                android:inputType="textPassword"
+                android:textColorHint="@color/agreementNotHighlighted"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/appBlue"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/oldPass"/>
+        </LinearLayout>
+
+        <com.midnight.healthcare.Text
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Leave password fields blank if you don’t want to change the password."
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/agreementNotHighlighted"
+
+            />
+
+        <com.midnight.healthcare.Btn
+            android:layout_width="166.52dp"
+            android:layout_height="52dp"
+            android:textColor="@android:color/white"
+            android:text="Save"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:id="@+id/saveButton"
+            android:textSize="18dp"
+            android:background="@drawable/round_blue_rotund"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

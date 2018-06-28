@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.midnight.healthcare.Activity.HireCNAActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/exit"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="21.5dp">
+
+                <Button
+                    android:layout_width="33.56dp"
+                    android:layout_height="21.53dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/back_arrow"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/hire_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="Hire Catherine B."
+                    android:textColor="@color/appBlue"
+                    android:textSize="18dp" />
+
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/offer_text"
+                    android:layout_width="344dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="To hire Catherine B. you need to send her an offer. If she accepts your offer - you hired her."
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#E1EFFA" />
+
+                <RelativeLayout
+                    android:id="@+id/creeate_offer_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="#F8FBFE">
+
+                    <com.midnight.healthcare.Text
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:text="Create offer"
+                        android:textColor="@color/appBlue"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/arrow_forward" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E1EFFA" />
+
+
+                <com.midnight.healthcare.Text
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Or select from your existing jobs:"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/noExistingJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="You do not have existing job!"
+                    android:textColor="@color/blueHighlighted"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+
+                <ListView
+                    android:id="@+id/offering_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

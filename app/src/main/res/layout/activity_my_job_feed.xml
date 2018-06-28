@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.midnight.healthcare.Activity.MyJobFeedActivity">
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:id="@+id/exit"
+        android:layout_marginTop="21.5dp">
+        <Button
+            android:layout_width="33.56dp"
+            android:layout_height="21.53dp"
+            android:clickable="false"
+            android:layout_centerInParent="true"
+            android:background="@drawable/back_arrow"
+            />
+    </RelativeLayout>
+    <com.midnight.healthcare.Text
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:text="My jobs"
+        android:textColor="@color/appBlue"
+        />
+    <com.midnight.healthcare.Btn
+        android:id="@+id/new_job_btn"
+        android:layout_width="87.52dp"
+        android:layout_height="38dp"
+        android:text="New job"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round_blue"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"/>
+
+    <com.midnight.healthcare.Text
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blueHighlighted"
+        android:text="You do not have any jobs"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/noJobs"
+        android:visibility="gone"
+        />
+    <ListView
+        android:id="@+id/job_feed_list"
+        android:layout_width="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+    />
+</RelativeLayout>

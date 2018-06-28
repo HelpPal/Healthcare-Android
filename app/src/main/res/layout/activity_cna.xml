@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activity.CNAActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/exit"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="21.5dp">
+
+                <Button
+                    android:layout_width="33.56dp"
+                    android:layout_height="21.53dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/back_arrow"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cna_img"
+                    android:layout_width="120.62dp"
+                    android:layout_height="120.62dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp" />
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/cna_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="name"
+                    android:textColor="@color/appBlue"
+                    android:textSize="24dp" />
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/cna_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="gender , age , city , state"
+                    android:textSize="18dp" />
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/cna_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_blue_text"
+                    android:gravity="center"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:text="0.1 mi"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+
+
+                <RatingBar
+                    android:id="@+id/rb"
+                    style="@style/StarRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:stepSize="0.5" />
+
+                <com.midnight.healthcare.Btn
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_blue"
+                    android:text="Rate"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#E1EFFA" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="97dp"
+                    android:background="#F8FBFE"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <com.midnight.healthcare.Text
+                        android:id="@+id/cna_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="6 years of expirience"
+                        android:textColor="@color/appBlue"
+                        android:textSize="22dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.midnight.healthcare.Text
+                            android:id="@+id/cna_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="$15-$20"
+                            android:textColor="#25B176"
+                            android:textSize="20dp" />
+
+                        <com.midnight.healthcare.Text
+                            android:id="@+id/cna_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="end"
+                            android:text="Part time"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E1EFFA" />
+
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/cna_descritpion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/skill_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp" />
+
+                <com.midnight.healthcare.Btn
+                    android:id="@+id/cna_hire"
+                    android:layout_width="202.52dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_blue"
+                    android:text="Hire"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <com.midnight.healthcare.Text
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send a message"
+                        android:textColor="@color/textColor"
+                        android:textSize="18dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <EditText
+                            android:id="@+id/cna_mess"
+                            android:layout_width="match_parent"
+                            android:layout_height="173dp"
+                            android:background="@drawable/round_blue_light"
+                            android:gravity="start"
+                            android:hint="Tap here to ask Catherine a
+question or leave her a feedback..."
+                            android:padding="10dp"
+                            android:textColor="@color/appBlue"
+                            android:textColorHint="@color/textColor"
+                            android:textSize="18dp" />
+
+                        <com.midnight.healthcare.Btn
+                            android:id="@+id/cna_send"
+                            android:layout_width="75dp"
+                            android:layout_height="38dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/round_blue"
+                            android:text="Send"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/reportProfileButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="10.15dp"
+                            android:layout_height="14.34dp"
+                            android:src="@drawable/flag" />
+
+                        <com.midnight.healthcare.Text
+                            android:id="@+id/reportButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Report Someone's profile"
+                            android:textColor="@color/agreementNotHighlighted"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

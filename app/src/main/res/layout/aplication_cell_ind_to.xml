@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/typeone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1EFFA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8FBFE"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <com.midnight.healthcare.Text
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You sent an offer to"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/cell_job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Catherine B."
+                    android:textColor="@color/appBlue"
+                    android:textSize="20sp" />
+
+                <!--<com.midnight.healthcare.Text-->
+                    <!--android:id="@+id/rating"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_toStartOf="@+id/rating_tv"-->
+                    <!--android:text="@string/rating"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:textColor="@color/blueHighlighted"-->
+                    <!--android:textSize="20sp" />-->
+
+                <!--<com.midnight.healthcare.Text-->
+                    <!--android:id="@+id/rating_tv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:textColor="@color/blueHighlighted"-->
+                    <!--android:textSize="20sp"-->
+                    <!--tools:text="4.5" />-->
+            </RelativeLayout>
+
+
+            <!--<RatingBar-->
+                <!--android:id="@+id/rb"-->
+                <!--style="@style/StarRatingBar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="10dp" />-->
+
+            <!--<com.midnight.healthcare.Btn-->
+                <!--android:id="@+id/rate"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/round_blue"-->
+                <!--android:text="Rate"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="18sp" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/cell_job_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/round_blue"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Riviera Beach, Florida"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/cell_job_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="$15/h"
+                    android:textColor="#25B176"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <com.midnight.healthcare.Text
+                android:id="@+id/cell_job_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hourly - Entry Level ($) - Est. Time: Less than 1 month, Less than 10 hrs/week"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="327dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.midnight.healthcare.BtnHelvetica
+                    android:id="@+id/job_cell_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/s"
+                    android:enabled="false"
+                    android:text="S"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#E1EFFA" />
+
+                <com.midnight.healthcare.BtnHelvetica
+                    android:id="@+id/job_cell_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:text="M"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#E1EFFA" />
+
+                <com.midnight.healthcare.BtnHelvetica
+                    android:id="@+id/job_cell_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:text="T"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#E1EFFA" />
+
+                <com.midnight.healthcare.BtnHelvetica
+                    android:id="@+id/job_cell_w"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:text="W"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#E1EFFA" />
+
+                <com.midnight.healthcare.BtnHelvetica
+                    android:id="@+id/job_cell_th"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:text="TH"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#E1EFFA" />
+
+                <com.midnight.healthcare.BtnHelvetica
+                    android:id="@+id/job_cell_f"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:enabled="false"
+                    android:text="F"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#E1EFFA" />
+
+                <com.midnight.healthcare.BtnHelvetica
+                    android:id="@+id/job_cell_sa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/sa"
+                    android:enabled="false"
+                    android:text="Sa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <com.midnight.healthcare.Text
+                android:id="@+id/cell_job_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Certified Nursing Assistant - Full Time Days - Kindred Hospital Palm Beaches, FL ( Job Number: 272175 ) Description Interested in a career with Kindred Hospitals – a place where you can put your heart into and…"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="41.62dp"
+                android:layout_marginTop="20dp">
+
+                <com.midnight.healthcare.Btn
+                    android:id="@+id/waitButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/round_blue_white"
+                    android:text="Waiting for an answer"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/declinedLayoutTypeOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="41.6dp"
+                    android:visibility="gone">
+
+                    <com.midnight.healthcare.Btn
+                        android:id="@+id/declinedTypeOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue_white"
+                        android:clickable="true"
+                        android:text="Declined"
+                        android:textAllCaps="false"
+                        android:textColor="#FF6262"
+                        android:textSize="18dp" />
+
+                    <com.midnight.healthcare.Btn
+                        android:id="@+id/optionsButton2TypeOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue_options"
+                        android:text="Options"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/after_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="41.6dp"
+                    android:visibility="gone">
+
+                    <com.midnight.healthcare.Btn
+                        android:id="@+id/sendMessageTypeOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue"
+                        android:clickable="true"
+                        android:text="Send a message"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+
+                    <com.midnight.healthcare.Btn
+                        android:id="@+id/optionsButtonTypeOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue_options"
+                        android:text="Options"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="#E1EFFA"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typezero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1EFFA"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="#F8FBFE"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <com.midnight.healthcare.Text
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You received an offer from" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cell_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.midnight.healthcare.Text
+                        android:id="@+id/cell_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Name"
+                        android:textColor="@color/appBlue"
+                        android:textSize="24dp" />
+
+                    <com.midnight.healthcare.Text
+                        android:id="@+id/cell_palce"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="City , State"
+                        android:textSize="18dp" />
+
+                    <com.midnight.healthcare.Text
+                        android:id="@+id/cell_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue_text"
+                        android:gravity="center"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:text="0.1 mi"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.midnight.healthcare.Text
+                        android:id="@+id/cell_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:text="$15-$20"
+                        android:textColor="#25B176"
+                        android:textSize="20dp" />
+
+                    <com.midnight.healthcare.Text
+                        android:id="@+id/cell_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:text="Part time"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.midnight.healthcare.Text
+                android:id="@+id/cell_description"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum sem eu finibus tempus. Morbi in faucibus neque…"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1EFFA"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <com.midnight.healthcare.Text
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="For your job"
+
+                    />
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/job"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Certified Nursing Assistant - Full Time Days - Kindred Hospital…"
+                    android:textColor="@color/appBlue"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_forward" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1EFFA"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="41.62dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/accepted"
+                    android:layout_width="340dp"
+                    android:layout_height="41.62dp"
+                    android:background="@drawable/round_gree"
+                    android:visibility="gone">
+
+                    <com.midnight.healthcare.Text
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Accepted!"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/acceptButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <com.midnight.healthcare.Btn
+                        android:id="@+id/accept"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue"
+                        android:text="Accept"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+
+                    <com.midnight.healthcare.Btn
+                        android:id="@+id/decline"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue_light"
+                        android:text="Decline"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/after_answerTypeZero"
+                    android:layout_width="match_parent"
+                    android:layout_height="41.6dp"
+                    android:visibility="gone">
+
+                    <com.midnight.healthcare.Btn
+                        android:id="@+id/sendMessageTypeZero"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue"
+                        android:clickable="true"
+                        android:text="Send a message"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+
+                    <com.midnight.healthcare.Btn
+                        android:id="@+id/optionsButtonTypeZero"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue_options"
+                        android:text="Options"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/declinedLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="41.6dp"
+                    android:visibility="gone">
+
+                    <com.midnight.healthcare.Btn
+                        android:id="@+id/declined"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue_white"
+                        android:clickable="true"
+                        android:text="Declined"
+                        android:textAllCaps="false"
+                        android:textColor="#FF6262"
+                        android:textSize="18dp" />
+
+                    <com.midnight.healthcare.Btn
+                        android:id="@+id/optionsButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_blue_options"
+                        android:text="Options"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1EFFA"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

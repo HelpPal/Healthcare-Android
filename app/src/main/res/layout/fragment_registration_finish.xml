@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.midnight.healthcare.TextBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done!"
+        android:textSize="28dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/appBlue"
+        android:layout_marginTop="80dp"
+        />
+    <com.midnight.healthcare.Text
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Your account is activated \n and ready to use."
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/appBlue"
+        android:layout_marginTop="115dp"
+        />
+
+    <com.midnight.healthcare.Btn
+        android:layout_marginTop="280dp"
+        android:layout_width="90.52dp"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:text="OK"
+        android:id="@+id/okButton"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round_blue"
+        android:padding="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.midnight.healthcare.Activity.AplicationsIndividulaActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/exit"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="21.5dp">
+
+        <Button
+            android:layout_width="33.56dp"
+            android:layout_height="21.53dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/back_arrow"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.midnight.healthcare.Text
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="Applications"
+            android:textColor="@color/appBlue"
+            android:textSize="18dp" />
+
+        <com.midnight.healthcare.Text
+            android:id="@+id/noApplicationsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="No job applications yet"
+            android:textColor="@color/blueHighlighted"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/aplication_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/block"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/round_blue_light">
+    <com.midnight.healthcare.Text
+        android:id="@+id/mess_text"
+        android:layout_width="wrap_content"
+        android:maxWidth="272dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Hey are you available tomorrow at 2 pm?"
+        android:textSize="16dp"/>
+</LinearLayout>
+<com.midnight.healthcare.Text
+    android:id="@+id/mess_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:text="5:13pm"
+    android:layout_marginStart="5dp"
+    android:textColor="@color/textColor"
+    android:textSize="12dp"
+   />
+</LinearLayout>

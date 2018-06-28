@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_subscribtion_ended"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.midnight.healthcare.Activity.SubscribtionEndedActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.midnight.healthcare.TextBold
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="Your subscription had ended."
+                android:textColor="@color/blueHighlighted"
+                android:textSize="28dp" />
+
+            <com.midnight.healthcare.TextHelvetica
+                android:layout_width="155dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="145dp"
+                android:background="@drawable/round_blue_light2"
+                android:gravity="center"
+                android:text="$9.99/month"
+                android:textColor="@color/appBlue"
+                android:textSize="20dp" />
+
+
+            <com.midnight.healthcare.Text
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="250dp"
+                android:gravity="center"
+                android:text="If you wish to continue using our app with this account - please continue your subscription."
+                android:textColor="@color/blueHighlighted"
+                android:textSize="18dp" />
+
+            <com.midnight.healthcare.Btn
+                android:id="@+id/subscribeNow"
+                android:layout_width="190.52dp"
+                android:layout_height="52dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="390dp"
+                android:background="@drawable/round_blue_rotund"
+                android:text="Subscribe Now"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="540dp"
+                android:background="@drawable/round_blue_light">
+
+                <com.midnight.healthcare.Text
+                    android:id="@+id/emailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="20dp"
+                    android:text="my@email.com"
+                    android:textColor="@color/blueHighlighted"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/delimiter"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/logOutButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <ImageView
+                        android:layout_width="12.24dp"
+                        android:layout_height="15.57dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/log_out" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/activeState"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/logoutButton"
+                android:layout_alignTop="@+id/logoutButton"
+                android:layout_marginStart="155dp"
+                android:background="@drawable/round_blue_subscribtion_active"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/log_out_active"
+                android:layout_width="12.24dp"
+                android:layout_height="15.57dp"
+                android:layout_alignStart="@+id/logoutButton"
+                android:layout_alignTop="@+id/logoutButton"
+                android:layout_marginStart="168.6dp"
+                android:layout_marginTop="11.5dp"
+                android:src="@drawable/log_out_active"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
